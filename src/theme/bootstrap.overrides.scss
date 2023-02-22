@@ -1,0 +1,111 @@
+/**
+ * Override Bootstrap styles that you can't modify via variables here.
+ *
+ */
+body {
+  font-family: tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+  background-color: #2F3238;
+  color: #7F8289;
+}
+a {
+  color: #de5e60;
+  text-decoration: none;
+  transition: color 0.5s ease-in-out 0s;
+  &:hover {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  &:focus {
+    text-decoration: none;
+  }
+}
+.navbar {
+  min-height: 60px;
+}
+.navbar-default .navbar-brand {
+  position: relative;
+  height: 60px;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 18px 10px 18px 60px;
+  color: #ffffff;
+}
+.navbar-default {
+  background-color: #26292E;
+  border-color: null;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+}
+.navbar-fixed-top {
+  border-bottom-width: 0;
+}
+
+.navbar-default .navbar-nav > li > a {
+  font-size: 16px;
+  color: #ffffff;
+  transition: color 0.25s ease-in-out 0s;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #de5e60;
+  background-color: transparent;
+}
+.modal-title {
+  font-size: 14px;
+  color: #000000;
+}
+.modal-header {
+  .close {
+    margin-top: -4px;
+    font-size: 14px;
+  }
+}
+footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: #26292E;
+  text-align: center;
+  z-index: 99;
+  .credits {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin-bottom: 0;
+    padding: 40px 0;
+
+    em {
+      color: #DE5E60;
+      font-style: normal;
+    }
+  }
+}
+
+/* mobile style */
+@media (max-width: 767px) {
+  .navbar-default {
+    text-align: center;
+    background-color: rgba(#2F3238, 0.5);
+    max-height: 50px;
+    min-height: 50px;
+    overflow: hidden;
+    margin-bottom: 0;
+    .navbar-brand {
+      float: inherit;
+      display: inline-block;
+      padding: 0 0 0 40px;
+      height: 50px;
+      div {
+        margin-right: 0;
+        top: 5px;
+        left: 0;
+      }
+      span {
+        display: none;
+      }
+    }
+  }
+}

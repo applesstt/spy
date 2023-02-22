@@ -1,0 +1,99 @@
+.wrapSpy {
+  padding-top: 20px;
+  padding-bottom: 80px;
+  .createForm {
+    .images {
+      margin-top: 15px;
+      .image {
+        display: inline-block;
+        border: 1px dotted #ffffff;
+        width: 100px;
+        height: 100px;
+        padding: 2px;
+        text-align: center;
+        margin-right: 5px;
+        img {
+          display: inline-block;
+          max-width: 96px;
+          max-height: 96px;
+        }
+      }
+    }
+    .actions {
+      :global(.btn) {
+        float: right;
+      }
+      .dropzone {
+        display: inline-block;
+        float: left;
+        height: auto;
+        width: auto;
+        .uploadImage {
+          cursor: pointer;
+          color: #ffffff;
+          i {
+            color: #5cb85c;
+            margin-right: 5px;
+          }
+          &:hover {
+            i {
+              color: #449d44;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .page {
+    text-align: center;
+  }
+  .spys {
+    color: #ffffff;
+    font-size: 16px;
+    background-color: #26292E;
+    margin-top: 20px;
+    .spy {
+      padding: 15px;
+      border-bottom: 1px solid #2c2f34;
+      .images {
+        margin-top: 10px;
+        position: relative;
+        .image {
+          display: inline-block;
+          width: 100px;
+          height: 100px;
+          text-align: center;
+          margin-right: 5px;
+          margin-top: 5px;
+          img {
+            max-width: 100px;
+            max-height: 100px;
+            display: inline-block;
+            cursor: zoom-in;
+          }
+          &.big {
+            max-width: 100%;
+            width: auto;
+            height: auto;
+            float: left;
+            z-index: 100;
+            img {
+              cursor: zoom-out;
+              max-width: 100%;
+              max-height: inherit;
+              width: auto;
+              height: auto;
+            }
+          }
+        }
+      }
+      .fromNow {
+        font-size: 12px;
+        color: #7F8289;
+        margin-top: 10px;
+        text-align: right;
+      }
+    }
+  }
+}

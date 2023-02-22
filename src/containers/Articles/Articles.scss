@@ -1,0 +1,52 @@
+.articles {
+  padding-top: 20px;
+  padding-bottom: 80px;
+  .grids {
+    background-color: #26292E;
+    .grid {
+      padding: 30px;
+      border-bottom: 1px solid #2c2f34;
+      .title {
+        .name {
+          color: #de5e60;
+        }
+        .user {
+          float: right;
+          font-size: 12px;
+        }
+      }
+      .info {
+        padding: 15px;
+        color: #ffffff;
+        img {
+          float: none !important;
+          width: auto !important;
+          max-width: 100%;
+          display: block;
+        }
+      }
+    }
+  }
+  .page {
+    text-align: center;;
+  }
+  .create {
+    background-color: #26292e;
+    padding: 30px;
+    :global(.form-group) {
+      margin-bottom: 30px;
+    }
+    .items {
+      display: block;
+      span {
+        display: inline-block;
+        padding: 5px 0;
+      }
+    }
+    .info {
+      textarea {
+        display: none;
+      }
+    }
+  }
+}

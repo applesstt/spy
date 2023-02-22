@@ -1,0 +1,38 @@
+.chat {
+  padding-top: 20px;
+  padding-bottom: 80px;
+  .blackboard {
+    padding: 30px;
+    background-color: #26292E;
+    border-radius: 3px;
+    form {
+      margin-bottom: 20px;
+    }
+    .messages {
+      min-height: 300px;
+      max-height: 500px;
+      overflow-y: auto;
+      .message {
+        margin-bottom: 20px;
+        .user {
+          font-size: 12px;
+        }
+        .text {
+          color: #ffffff;
+          font-size: 16px;
+          margin-top: 10px;
+          span {
+            font-size: 12px;
+            color: #7F8289;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+  input {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+}

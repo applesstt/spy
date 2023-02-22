@@ -1,0 +1,31 @@
+.react-editor {
+  min-height: 400px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  :global(.public-DraftEditor-content) {
+    padding: 15px;
+    min-height: 320px;
+  }
+  :global(.rdw-option-wrapper) {
+    height: 30px;
+    width: 35px;
+  }
+  :global(.rdw-image-left) {
+    float: none;
+  }
+  :global(.rdw-image-right) {
+    float: none;
+  }
+  :global(.rdw-image-center) {
+    justify-content: initial;
+  }
+  :global(.rdw-image-alignment-options-popup) {
+    display: none;
+  }
+  :global(.rdw-image-imagewrapper) {
+    img {
+      width: auto !important;
+      max-width: 100%;
+    }
+  }
+}

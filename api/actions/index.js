@@ -1,0 +1,11 @@
+export loadInfo from './loadInfo';
+export loadAuth from './loadAuth';
+export signup from './signup';
+export login from './login';
+export logout from './logout';
+export uploadImage from './uploadImage';
+export * as widget from './widget/index';
+export * as article from './article/index';
+export * as survey from './survey/index';
+export * as spy from './spy/index';
+export * as user from './user/index';
